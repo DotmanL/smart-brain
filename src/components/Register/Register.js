@@ -25,7 +25,7 @@ onNameChange = (event) => {
   }
 
   onSubmitRegister = () => {
-    fetch("http://localhost:3002/register",{
+    fetch("https://mysterious-sea-66706.herokuapp.com/register",{
       method: "post",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({
