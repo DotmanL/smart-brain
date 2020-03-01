@@ -7,4 +7,9 @@
     background-size: 20px 20px;
 
 }
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
