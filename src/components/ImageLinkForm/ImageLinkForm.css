@@ -8,27 +8,6 @@
 
 }
 
-.form-content {
-    display: flex;
-}
-
-.form-content > input {
-    flex-grow: 1;
-}
-
-.form-content > button {
-    flex-grow: 0.5;
-}
-
-.form-content > * {
-    padding: 5px;
-    border-radius: 3px;
-}
-
-button:hover {
-    transform: scale(1.1);
-}
-
 @media (max-width: 526px) {
     p {
         padding: 0 10px;
@@ -36,10 +15,6 @@ button:hover {
 
     .form {
         width: 300px;
-    }
-
-    .form-content {
-        flex-direction: column;
     }
 }
 
