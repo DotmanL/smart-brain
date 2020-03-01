@@ -49,6 +49,7 @@ constructor (props) {
         <input 
         className="pa2 input-reset ba bg-transparent hover-bg-blue hover-white w-100" 
         type="email" 
+        placeholder = "type in your email address"
         name="email-address"  
         id="email-address"
         onChange = {this.onEmailChange}      
@@ -58,6 +59,7 @@ constructor (props) {
         <label className="db fw6 lh-copy f6" htmlFor="password">Password</label>
         <input className="b pa2 input-reset ba bg-transparent hover-bg-blue hover-white w-100" 
         type="password" 
+        placeholder = "type in your password"
         name="password"  
         id="password"
         onChange = {this.onPasswordChange}
@@ -71,7 +73,7 @@ constructor (props) {
        value="Sign in"/>
     </div>
     <div className="lh-copy mt3">
-      <p onClick ={() => onRouteChange ('register')} className="f4 link dim black db pointer" >Register</p>
+      <p onClick ={() => onRouteChange ('register')} className="f4 link dim black db pointer" >Sign Up</p>
       
     </div>
   </div>
