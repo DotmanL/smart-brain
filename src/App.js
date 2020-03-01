@@ -18,16 +18,26 @@ import './App.css';
 const particlesOptions = {
   particles: {
     number: {
-      value: 80,
+      value: 70,
       density: {
         enable: true,
-        value_area: 800,
-
+        value_area: 700
+      }
+    },
+    move: {
+      speed: 6
+    }
+  },
+  interactivity: {
+    detect_on: 'window',
+    events: {
+      onhover: {
+        enable: true,
+        mode: ['repulse']
       }
     }
   }
-}
-
+};
 const initialState ={
   input: '',
       imageUrl: '',
