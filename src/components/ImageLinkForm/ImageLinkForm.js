@@ -3,7 +3,7 @@ import './ImageLinkForm.css';
 
 const ImageLinkForm = ({onInputChange, onButtonSubmit}) => {
     return (
-        <div className ="container">
+        <div>
             <p className= 'f5 white'>
                 {'This Smart brain app will detect faces in your pictures. Give it a try '}
                 <p className= 'f5 white'>
