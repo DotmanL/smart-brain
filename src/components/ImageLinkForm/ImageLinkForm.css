@@ -1,9 +1,58 @@
 .form{
-    width: 7000px;
+    padding: 30px;
+    width: 450px;
+    margin: 0 auto;
+    border-radius: 5px;
     background: linear-gradient(315deg, transparent 75%, #d45d55 0)-10px 0,
     linear-gradient(45deg, transparent 75%, #d45d55 0)-10px 0,
     linear-gradient(135deg, #a7332b 50%, transparent 0) 0 0,
     linear-gradient(45deg, #6a201b 50%, #561a16 0) 0 0 #561a16;
     background-size: 20px 20px;
 
+}
+.form-content {
+    display: flex;
+}
+
+.form-content > input {
+    flex-grow: 1;
+}
+
+.form-content > button {
+    flex-grow: 0.5;
+}
+
+.form-content > * {
+    padding: 5px;
+    border-radius: 3px;
+}
+
+button {
+    background: #b536e2;
+    border-color: #b536e2;
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 526px) {
+    p {
+        padding: 0 10px;
+    }
+
+    .form {
+        width: 300px;
+    }
+
+    .form-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 400px) {
+    .form {
+        width: 200px;
+    }
 }
