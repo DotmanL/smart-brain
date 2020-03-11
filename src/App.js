@@ -96,7 +96,8 @@ class App extends Component {
     this.setState({ input: event.target.value });
   }
 
-  onButtonSubmit = () => {
+  onButtonSubmit = (event) => {
+    event.preventDefault(); 
     this.setState({ imageUrl: this.state.input });
     fetch ('https://mysterious-sea-66706.herokuapp.com/imageurl', {
       method: "post",
