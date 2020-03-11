@@ -17,7 +17,8 @@ constructor (props) {
     this.setState({signInPassword: event.target.value})
   }
 
-  onSubmitSignIn = () => {
+  onSubmitSignIn = (event) => {
+    event.preventDefault(); 
 
     fetch("https://mysterious-sea-66706.herokuapp.com/signin",{
       method: "post",
@@ -52,7 +53,8 @@ constructor (props) {
         placeholder = "type in your email address"
         name="email-address"  
         id="email-address"
-        onChange = {this.onEmailChange}      
+        onChange = {this.onEmailChange}   
+        required   
         />
       </div>
       <div className="mv3">
@@ -63,6 +65,7 @@ constructor (props) {
         name="password"  
         id="password"
         onChange = {this.onPasswordChange}
+        required  
         />
       </div>
     </fieldset>
@@ -70,7 +73,9 @@ constructor (props) {
       <input className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
        onClick ={this.onSubmitSignIn}
        type="submit" 
-       value="Sign in"/>
+       value="Sign in"
+       />
+       
     </div>
     <div className="lh-copy mt3">
       <p onClick ={() => onRouteChange ('register')} className="f4 link dim black db pointer" >Sign Up</p>

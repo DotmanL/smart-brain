@@ -24,7 +24,8 @@ onNameChange = (event) => {
     this.setState({password: event.target.value})
   }
 
-  onSubmitRegister = () => {
+  onSubmitRegister = (event) => {
+    event.preventDefault(); 
     fetch("https://mysterious-sea-66706.herokuapp.com/register",{
       method: "post",
       headers: {"Content-Type": "application/json"},
@@ -59,6 +60,7 @@ render() {
         name="Full Name" 
          id="FullName"
          onChange = {this.onNameChange}
+         required  
          />
       </div>
       <div className="mt3">
@@ -69,6 +71,7 @@ render() {
         name="email-address"  
         id="email-address"
         onChange = {this.onEmailChange}
+        required  
         />
       </div>
       <div className="mv3">
@@ -79,6 +82,7 @@ render() {
         name="password" 
          id="password"
          onChange = {this.onPasswordChange} 
+         required  
          />
       </div>
     </fieldset>
