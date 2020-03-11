@@ -16,7 +16,7 @@ const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
     <div className='form'>
         <div className='form-content'>
             <input type="text" onChange={onInputChange} placeholder='Please enter an image URL' required/>
-            <button className='pointer' onClick={onButtonSubmit}>Detect</button>
+            <button className='pointer' onClick={onButtonSubmit} required>Detect</button>
         </div>
     </div>
 </div>
